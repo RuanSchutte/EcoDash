@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoDash - African Solar Powered Drone Simulator</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>EcoDash</h1>
+        <p>Solar Powered Drone Delivery Simulator</p>
+    </header>
+
+    <main>
+
+        <div id="instructions">
+
+            <h2>How to Play</h2>
+
+            <p>
+                Use WASD or the arrow keys to control the drone.
+            </p>
+
+            <p>
+                Avoid obstacles and conserve your battery.
+            </p>
+
+            <p>
+                Visit solar stations to recharge.
+            </p>
+
+            <p>
+                Note: Solar stations do not charge at night.
+            </p>
+
+        </div>
+
+        <div id="game-container">
+
+            <canvas id="gameCanvas"></canvas>
+
+            <div id="hud">
+
+                <div>
+                    Score:
+                    <span id="score">0</span>
+                </div>
+
+                <div>
+                    Battery:
+                    <span id="battery">100</span>%
+                </div>
+
+                <div>
+                    Distance:
+                    <span id="distance">0</span>
+                </div>
+
+                <div>
+                    High Score: <span id="highScore">0</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="controls">
+
+            <button id="startButton">
+                Start Mission
+            </button>
+
+            <button id="pauseButton">
+                Pause
+            </button>
+
+            <button id="restartButton">
+                Restart
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="player.js"></script>
+    <script src="obstacle.js"></script>
+    <script src="main.js"></script>
+
+</body> 
+</html>
